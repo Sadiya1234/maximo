@@ -1,0 +1,39 @@
+<div class="conatiner bg-1">
+    <div>
+        <div class="row">
+            <div class="col-md-4" style="padding-right:0px ! important">
+                <img src='../../assets/images/mx_icon_iot18.png' style="width: 200px;
+                    margin-top: 15%;
+                    float:right;
+                    ">
+            </div>
+
+            <div class="col-md-8">
+                <h3 class="header">IBM Maximo</h3>
+                <hr class="new1">
+                <form [formGroup]="loginForm" (ngSubmit)="Login()">
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="User Name" formControlName="userName" [(ngModel)]="userName" required>
+                        <mat-error class="error-msg" *ngIf="loginForm.controls.userName.hasError('required')">
+                            Please enter user Name
+                        </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Password" minlength="6" maxlength="15" [type]="hide ? 'password' : 'text'" formControlName="password"
+                            [(ngModel)]="password" required>
+                        <mat-error class="error-msg" *ngIf="loginForm.controls.password.hasError('required')">
+                            Please enter password
+                        </mat-error>
+                        <mat-error class="error-msg" *ngIf="loginForm.controls.password.hasError('minlength')">
+                            Password must be 6-15 characters long
+                        </mat-error>
+                    </mat-form-field>
+                    <div>
+                    <button mat-raised-button color="primary" class="btn" type="submit" (click)="Login()" >Sign In</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

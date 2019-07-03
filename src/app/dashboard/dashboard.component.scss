@@ -1,0 +1,197 @@
+#map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .col-25 {
+    float: left;
+    margin-left: 10px;
+    margin-left: 10px;
+    width: 25%;
+    margin-top: 6px;
+  }
+  .bg{
+    background-color:#003366;
+    height:750px;
+  }
+.top{
+  margin-left:40%;
+  font-size:25px;
+  color:#c3c3d7
+}
+  .col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+  }
+  /* Clear floats after the columns */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  agm-map {
+    height: 440px;
+  }
+  @media only screen 
+  and (min-device-width : 767px) 
+  and (max-device-width : 1024px) {
+    .s-1{
+      width:180px !important;
+      height:180px !important;
+    }
+    .s-2{
+      width:380px !important;
+      height:180px !important;
+    }
+    .s-3{
+      height: 520px !important;
+    }
+    .cl{
+      margin-left: -6% !important;
+    }
+    .map{
+      width:660px !important;
+      height:520px !important;
+    }
+    agm-map {
+      height: 480px !important;
+    }
+    .bg{
+      height: 800px !important;
+    }
+  }
+  @media only screen 
+  and (max-width : 768px)  {
+    .s-1{
+      width:130px !important;
+      height:250px !important;
+    }
+    .listText{
+      font-size: 10px !important;
+    }
+    .s-2{
+      width:250px !important;
+      height:250px !important;
+    }
+    .s-3{
+      height: 500px !important;
+      width:230px !important;
+    }
+    .cl{
+      margin-left: -5% !important;
+    }
+    .map{
+      width:500px !important;
+      height:500px !important;
+    }
+    agm-map {
+      height: 460px !important;
+    }
+    .bg{
+      height: 900px !important;
+    }
+    .text{
+      font-size: 13px;
+    }
+  }
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .s-1{
+      width:290px !important;
+      height:120px !important;
+      margin-bottom: 10px;
+    }
+    .s-2{
+    
+      width:290px !important;
+    
+    }
+    .s-3{
+      height: 520px !important;
+      width:290px !important;
+    }
+    .cl{
+      margin-left: 0px !important;
+    }
+    .map{
+      width:290px !important;
+      height:520px !important;
+    }
+    agm-map {
+      height: 480px !important;
+    }
+    .bg{
+      height: 900px !important;
+    }
+    .top{
+      font-size:25px;
+      color:#c3c3d7;
+      margin-left: -1%;
+    }
+    .text{
+      font-size: 15px !important;
+    }
+    .modal {
+      background: rgba(0,0,0,0.6);
+    }
+ 
+  
+ 
+  }

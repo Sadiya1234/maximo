@@ -1,0 +1,292 @@
+<div class="bg">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+        <a href="#" class="navbar-brand top" >Asset Risk Dashboard</a>
+
+        <div class="navbar-nav ml-auto">
+            <a href="#" class="nav-item nav-link">Logout<i class="fa fa-sign-out" aria-hidden="true" style="padding-left:5px;font-size:20px"></i></a>
+        </div>
+
+    </nav>
+
+    <section>
+        <div class="row" style="margin-top:15px">
+            <div class="col-md-3" style="width:100px">
+                <div class="container">
+                    <div class="card s-1" style="height:150px;width:220px">
+                        <div class="card-body"><i class="fa fa-map-marker" style="font-size:48px;color:#ff3300;float:right"></i>
+                            <p style="color:#a3a3c2;font-weight:700;font-size:28px">12</p>
+                            <p style="font-weight:bold;font-size:20px;color:#c3c3d7">High Risk</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cl" style="margin-left:-8%">
+                <div class="container">
+                    <div class="card s-1" style="height:150px;width:220px">
+                        <div class="card-body"><i class="fa fa-map-marker" style="font-size:48px;color:#ffff36;float:right"></i>
+                            <p style="color:#a3a3c2;font-weight:700;font-size:28px">6</p>
+                            <p style="font-weight:bold;font-size:20px;color:#c3c3d7">Medium Risk</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cl" style="margin-left:-8%">
+                <div class="container">
+                    <div class="card s-1" style="height:150px;width:220px">
+                        <div class="card-body"><i class="fa fa-map-marker" style="font-size:48px;color:#00cc00;float:right"></i>
+                            <p style="color:#a3a3c2;font-weight:700;font-size:28px">6</p>
+                            <p style="font-weight:bold;font-size:20px;color:#c3c3d7">Low Risk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 cl" style="margin-left:-8%">
+                <div class="container">
+                    <div class="card s-2" style="height:150px;width:610px">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6 style="color:#a3a3c2;font-weight:700;font-size:28px">Total Impact Score:19</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Emergency Maintenance:6</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Material Avaliable:4</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">High Critical Assets:5</li>
+
+                                </div>
+                                <div class="col-md-4">
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Medium critical location:2</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Craft Avaliable:1</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Assets condition:Down</li>
+                                </div>
+                                <div class="col-md-4">
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Medium critical location:2</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Craft Avaliable:1</li>
+                                    <li class="listText" style="font-size:13px;color:#c3c3d7">Location condition:Operating</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row" style="padding-top:15px">
+            <div class="col-md-4">
+                <div class="container">
+                    <div class="card s-3" style="height:480px">
+                        <div class="card-body">
+                            <h4 style="color:#a3a3c2;font-weight:700;">Search Criteria</h4>
+                            <hr>
+                            <form action="/action_page.php">
+                                <div class="row">
+                                    <div class="col-25 text">
+                                        <label for="fname" style="color:#a3a3c2;float:right">WO#</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="fname" name="firstname" placeholder="Enter WO number" style="color:#ccc">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25 text">
+                                        <label for="lname" style="color:#a3a3c2;float:right">Asset#</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select style="color:#ccc">
+                                  <option value="#" style="color:#ccc">Choose Options</option>
+                                  <option value="australia" style="color:#ccc">A2650</option>
+                                  <option value="canada" style="color:#ccc">A2640</option>
+                                  <option value="usa" style="color:#ccc">A2890</option>
+                                </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25 text">
+                                        <label for="loc" style="color:#a3a3c2;float:right">Location</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="loc" name="loc" placeholder="Enter Location" style="color:#ccc">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25 text">
+                                        <label for="wo" style="color:#a3a3c2;float:right">WO Status</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select style="color:#ccc">
+                                <option value="#" style="color:#ccc">Choose Options</option>
+                                <option value="australia" style="color:#ccc">New Request</option>
+                                <option value="canada" style="color:#ccc">Work in progress</option>
+                                <option value="usa" style="color:#ccc">Completed</option>
+                              </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-25 text">
+                                        <label for="wot" style="color:#a3a3c2;float:right">WO Type</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select style="color:#ccc">
+                            <option value="#"  style="color:#ccc">Choose Options</option>
+                            <option value="australia"  style="color:#ccc">Type1</option>
+                            <option value="canada"  style="color:#ccc">Type2</option>
+                            <option value="usa"  style="color:#ccc">Type3</option>
+                          </select>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <p style="align-item:center">
+                                            <button type="button" class="btn btn-primary">Reset</button>
+                                            <button type="button" class="btn btn-success" (click)="getMapDetails(id)">Search</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="margin-left:-3%">
+                <div class="container">
+                    <div class="card map" style="height:480px;width:895px">
+                        <div class="card-body">
+                            <agm-map [latitude]="latitude" [longitude]="longitude" style="height: 890" >
+                                <agm-marker [iconUrl]="iconUrl" (mouseOver)="window.open()" (mouseOut)="window.close()" *ngFor="let marker of markers" [latitude]="marker.woServiceAddressLatitude"
+                                    [longitude]="marker.woServiceAddressLongitude" (markerClick)=markerClick(window) [markerDraggable]="true"  (dragEnd)="markerDragEnd($event)"  >
+                                    <agm-info-window #window >
+                                        <div>AssetNum: {{marker.woAssetNum}} </div>
+                                        <div>Description: {{marker.woDescription}}
+                                        </div>
+                                        <div>WO Num: {{marker.woNum}}
+                                        </div>
+                                        <div>Work Order status: {{marker.woStatus}}
+                                        </div>
+                                        <div>SiteId: {{marker.woSiteId}}
+                                        </div>
+                                        <div>Reported By: {{marker.woReportBy}}
+                                        </div>
+                                        <div>Changed By: {{marker.woChangedBy}}
+                                        </div>
+
+                                    </agm-info-window>
+                                   
+                                </agm-marker>
+
+                            </agm-map>
+                            <!-- <agm-map [latitude]="lat" [longitude]="lng">
+                      <agm-marker *ngFor="let m of markers; let i = index"
+                              [latitude]="m.lat"
+                              [longitude]="m.lng"
+                              (markerClick)="clickedMarker(m, i)"
+                              [iconUrl]="m.iconUrl">
+                              <agm-info-window>{{m.label}}</agm-info-window>
+                      </agm-marker>
+                    </agm-map> -->
+                            <!-- <script type="text/javascript">
+                      var markers = [
+      
+                        {
+                          "title": 'Assets# - A2840 \n WO - PM \n Risk Score - 45',
+                          "lat": '12.971599',
+                          "lng": '77.594566',
+                          "description": 'WO:256',
+                          "type": 'High Risk'
+                        },
+      
+                        {
+      
+                          "title": 'Assets# - A2640 \n WO - AM \n Risk Score - 36',
+                          "lat": '28.704060',
+                          "lng": '77.102493',
+                          "description": 'WO:234',
+                          "type": 'Medium Risk'
+                        },
+                        {
+                          "title": 'Assets# - A3670 \n WO - AM \n Risk Score - 86',
+                          "lat": '26.846708',
+                          "lng": '80.946159',
+                          "description": 'WO:456',
+                          "type": 'Low Risk'
+                        },
+      
+      
+                      ];
+                      window.onload = function () {
+      
+                        var mapOptions = {
+                          center: new google.maps.LatLng(markers[0].lat, markers[0].lng),
+                          zoom: 4,
+                          mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        var infoWindow = new google.maps.InfoWindow();
+                        var latlngbounds = new google.maps.LatLngBounds();
+                        var map = new google.maps.Map(document.getElementById("dvMap"), mapOptions);
+                        var i = 0;
+                        var interval = setInterval(function () {
+                          var data = markers[i]
+                          var myLatlng = new google.maps.LatLng(data.lat, data.lng);
+                          var icon = "";
+                          switch (data.type) {
+                            case "High Risk":
+                              icon = "red";
+                              break;
+                            
+                            case "Medium Risk":
+                              icon = "yellow";
+                              break;
+                            case "Low Risk":
+                              icon = "green";
+                              break;
+                          }
+                          icon = "http://maps.google.com/mapfiles/ms/icons/" + icon + ".png";
+                          var marker = new google.maps.Marker({
+                            position: myLatlng,
+                            map: map,
+                            title: data.title,
+                            animation: google.maps.Animation.DROP,
+                            icon: new google.maps.MarkerImage(icon)
+                          });
+                          (function (marker, data) {
+                            google.maps.event.addListener(marker, "click", function (e) {
+                              infoWindow.setContent(data.description);
+                              infoWindow.open(map, marker);
+                            });
+                          })(marker, data);
+                          latlngbounds.extend(marker.position);
+                          i++;
+                          if (i == markers.length) {
+                            clearInterval(interval);
+                            var bounds = new google.maps.LatLngBounds();
+                            map.setCenter(latlngbounds.getCenter());
+                            map.fitBounds(latlngbounds);
+                          }
+                        }, 8);
+                      }
+                    </script>
+                    <table>
+                      <tr>
+                        <td>
+                          <div id="dvMap" style="width:860px; height: 440px">
+                          </div>
+                        </td>
+                        <td valign="top">
+      
+                        </td>
+                      </tr>
+                    </table> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
